@@ -41,8 +41,7 @@
 
   <header>
     <a href="https://occidental-lang.com"><img src="https://occidental-lang.com/img/occidental-logo2.png" alt="Occidental old style logo" width="150px"></a>
-    <h1>Dictionary Search</h1>
-    <button value="master2018" onclick="getDictionary(this)">master2018</button>
+    <h1>Lidepla Dictionary Browser</h1>
   </header>
 
   <br><hr>
@@ -67,6 +66,7 @@
       getDictionary(currentDictionary);
     } else {
       console.log('no dictionary found in url.')
+      getDictionary("nothing in url");
     }
     
 
@@ -113,7 +113,7 @@
         contentTag: '#jetsContent',
         searchInSpecificColumn: true,
         callSearchManually: true,
-        columns: [0 ,1, 2],
+        columns: [0 ,2, 3],
         diacriticsMap: {
           a: "ÁÀÃÂÄáàãâäāǎ",
           я: "я́",
@@ -128,9 +128,9 @@
           s: "ŝ",
         }
       });
-      $("#english_search").on("input", function(event) { jets.search(event.target.value, 0) } );
-      $("#lidepla_search").on("input", function(event) { jets.search(event.target.value, 1) } );
-      $("#russian_search").on("input", function(event) { jets.search(event.target.value, 2) } );
+      $("#english_search").on("input", function(event) { jets.search(event.target.value, 2) } );
+      $("#lidepla_search").on("input", function(event) { jets.search(event.target.value, 0) } );
+      $("#russian_search").on("input", function(event) { jets.search(event.target.value, 3) } );
     }
   </script>
  </body>

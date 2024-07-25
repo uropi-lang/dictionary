@@ -1,0 +1,8 @@
+/* light.css: 👉 dark-on-light */
+:root {
+    --color: rgb(5, 5, 5);
+    --accent: #3d6a4a;
+    --hover: #704d37;
+    --background-color: rgb(250, 250, 250);
+    --background-color-alt: rgb(221, 221, 221);
+}

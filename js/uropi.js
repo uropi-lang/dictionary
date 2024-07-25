@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 function loadDict(lang, history) {
 	language = lang;
-	Papa.parse("data/germanisch.csv", {
+	Papa.parse("data/uropi.csv", {
 		download: true,
 		header: false,
 		skipEmptyLines: true,
